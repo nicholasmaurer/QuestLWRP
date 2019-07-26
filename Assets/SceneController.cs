@@ -29,6 +29,6 @@ public class SceneController : MonoBehaviour
         Gizmos.color = Color.magenta;
         Gizmos.DrawCube(endPoint.transform.position, Vector3.one);
         Gizmos.color = Color.white;
-        Gizmos.DrawWireCube(sceneBounds.center, sceneBounds.size);
+        Gizmos.DrawWireCube(sceneBounds.center, sceneBounds.extents);
     }
 }
