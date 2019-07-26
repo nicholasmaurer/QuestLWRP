@@ -40,7 +40,9 @@ public class OculusSampleFrameworkUtil
   {
     if (state == PlayModeStateChange.EnteredPlayMode)
     {
+      #if !UNITY_EDITOR_OSX
       OVRPlugin.SendEvent("load", OVRPlugin.wrapperVersion.ToString(), "sample_framework");
+      #endif
     }
   }
 #endif
