@@ -303,7 +303,7 @@ public class LocomotionTeleport : MonoBehaviour
 				float r, h;
 				if (UseCharacterCollisionData)
 				{
-					var c = LocomotionController.CharacterController;
+					var c = LocomotionController.characterController;
 					h = c.height;
 					r = c.radius;
 				}
@@ -325,7 +325,7 @@ public class LocomotionTeleport : MonoBehaviour
 				float r;
 				if (UseCharacterCollisionData)
 				{
-					var c = LocomotionController.CharacterController;
+					var c = LocomotionController.characterController;
 					r = c.radius - c.skinWidth;
 				}
 				else
@@ -762,7 +762,7 @@ public class LocomotionTeleport : MonoBehaviour
 	/// </summary>
 	public void DoTeleport()
 	{
-		var character = LocomotionController.CharacterController;
+		var character = LocomotionController.characterController;
 		var characterTransform = character.transform;
 		var destTransform = _teleportDestination.OrientationIndicator;
 
@@ -793,7 +793,7 @@ public class LocomotionTeleport : MonoBehaviour
 	/// <returns></returns>
 	public Vector3 GetCharacterPosition()
 	{
-		return LocomotionController.CharacterController.transform.position;
+		return LocomotionController.characterController.transform.position;
 	}
 
 	/// <summary>
@@ -824,9 +824,9 @@ public class LocomotionTeleport : MonoBehaviour
 	{
 		var destTransform = _teleportDestination.OrientationIndicator;
 		Vector3 destPosition = destTransform.position;
-		destPosition.y += LocomotionController.CharacterController.height/2.0f;
+		destPosition.y += LocomotionController.characterController.height/2.0f;
 
-		var character = LocomotionController.CharacterController;
+		var character = LocomotionController.characterController;
 		var characterTransform = character.transform;
 
 		var lerpPosition = Vector3.Lerp(startPos, destPosition, positionPercent);

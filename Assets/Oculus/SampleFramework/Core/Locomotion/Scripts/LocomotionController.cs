@@ -22,16 +22,16 @@ using UnityEngine.SceneManagement;
 public class LocomotionController : MonoBehaviour
 {
     public OVRCameraRig CameraRig;
-    public CharacterController CharacterController;
+    public CharacterController characterController;
     public OVRPlayerController PlayerController;
 
     void Start()
     {
-        if (CharacterController == null)
+        if (characterController == null)
         {
-            CharacterController = GetComponentInParent<CharacterController>();
+            characterController = GetComponentInParent<CharacterController>();
         }
-        Assert.IsNotNull(CharacterController);
+        Assert.IsNotNull(characterController);
         if (PlayerController == null)
         {
             PlayerController = GetComponentInParent<OVRPlayerController>();
