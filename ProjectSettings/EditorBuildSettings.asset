@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Application/Scenes/BaseScene/BaseScene.unity
-    guid: 4b44f460192e945ac9ae1c66e923cb0e
-  - enabled: 1
-    path: Assets/Application/Scenes/Billboard/Billboard.unity
+  - enabled: 0
+    path: Assets/Application/Scenes/Glass1/Glass1.unity
     guid: ff4d3907d56da994ba1e452e8b7c47c1
+  - enabled: 1
+    path: Assets/Application/Scenes/Rehearsal/Rehearsal.unity
+    guid: ad59bfd197d646e41bfafb3065a3146c
   m_configObjects: {}
