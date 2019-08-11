@@ -6,8 +6,10 @@ using UnityEngine.Events;
 
 public class SpawnPoint : MonoBehaviour
 {
-    void Start()
+    IEnumerator Start()
     {
+        yield return new WaitUntil(()=> SceneController.Instance.vrCamera);
+        yield return new WaitUntil(()=> SceneController.Instance.firstPersonCamera);
         if (Application.isEditor)
         {
             SceneController.Instance.vrCamera.SetActive(false);

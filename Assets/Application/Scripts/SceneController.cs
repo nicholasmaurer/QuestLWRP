@@ -10,8 +10,8 @@ using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour
 {
     public Bounds sceneBounds;
-    public GameObject vrCamera;
-    public GameObject firstPersonCamera;
+    [HideInInspector] public GameObject vrCamera;
+    [HideInInspector] public GameObject firstPersonCamera;
     private bool isLoading = false;
     public static SceneController Instance;
     private static SceneController instance;
@@ -25,13 +25,14 @@ public class SceneController : MonoBehaviour
         }
         else
         {
+            vrCamera = FindObjectOfType<VRCamera>().gameObject;
+            firstPersonCamera = FindObjectOfType<FpsCharacterController>().gameObject;
             Instance = instance;
             DontDestroyOnLoad(this.gameObject);
             DontDestroyOnLoad(vrCamera);
             DontDestroyOnLoad(firstPersonCamera);
         }
     }
-    
     public IEnumerator LoadNextScene()
     {
         if(isLoading)
