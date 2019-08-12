@@ -20,22 +20,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Application/Scenes/Glass/Glass.unity
     guid: 2bdc98d168d4e864180d617c63743dc5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Application/Scenes/Curtain/Curtain.unity
     guid: 4e9c479f3234a0746b2802ffd24d026b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Application/Scenes/Alice Parachutes/Alice Parachutes.unity
     guid: b68e7a536dc5ce94f8f17854e4dabf16
-  - enabled: 1
+  - enabled: 0
     path: Assets/Application/Scenes/Lilly Pilly/LillyPilly.unity
     guid: d79985a64e885b44886858489857799f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Application/Scenes/Tara Red Carpet/Tara Red Carpet.unity
     guid: f2d23b8898722244899830297e60bf90
-  - enabled: 1
+  - enabled: 0
     path: Assets/Application/Scenes/Moon Scene/BaseScene.unity
     guid: a1cb39d6c5ecca44a9ec2fe805cc1407
-  - enabled: 1
+  - enabled: 0
     path: Assets/Application/Scenes/Smashed Plates/Smashed Plates.unity
     guid: e05f1c90c9ff82e40bece74bec7546f3
   m_configObjects: {}
