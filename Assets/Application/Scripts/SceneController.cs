@@ -10,8 +10,8 @@ using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour
 {
     public Bounds sceneBounds;
-    public GameObject vrCamera;
-    public GameObject firstPersonCamera;
+    [HideInInspector] public GameObject vrCamera;
+    [HideInInspector] public GameObject firstPersonCamera;
     private bool isLoading = false;
     public static SceneController Instance;
     private static SceneController instance;
@@ -25,26 +25,33 @@ public class SceneController : MonoBehaviour
         }
         else
         {
+            vrCamera = FindObjectOfType<VRCamera>().gameObject;
+            firstPersonCamera = FindObjectOfType<FpsCharacterController>().gameObject;
             Instance = instance;
             DontDestroyOnLoad(this.gameObject);
             DontDestroyOnLoad(vrCamera);
             DontDestroyOnLoad(firstPersonCamera);
         }
     }
-    
     public IEnumerator LoadNextScene()
     {
         if(isLoading)
             yield break;
         isLoading = true;
         Scene scene = SceneManager.GetActiveScene();
-        int buildIndex = scene.buildIndex + 1;
-        if (SceneManager.sceneCountInBuildSettings < buildIndex -1)
+        int activeBuildIndex = scene.buildIndex;
+        int loadBuildIndex = 0;
+        if (SceneManager.sceneCountInBuildSettings > activeBuildIndex + 1)
         {
-            Debug.LogError("SceneManager has run out of scenes to load, you may need to add your scene to the build index.");
-            yield break;
+            loadBuildIndex = activeBuildIndex + 1;
         }
-        AsyncOperation loadOperation = SceneManager.LoadSceneAsync(buildIndex, LoadSceneMode.Additive);
+        else
+        {
+            loadBuildIndex = 0;
+            Debug.Log("SceneManager has run out of scenes to load, loading first scene.");
+        }
+
+        AsyncOperation loadOperation = SceneManager.LoadSceneAsync(loadBuildIndex, LoadSceneMode.Additive);
         yield return new WaitUntil(()=> loadOperation.isDone);
         AsyncOperation unLoadOperation = SceneManager.UnloadSceneAsync(scene);
         isLoading = false;
