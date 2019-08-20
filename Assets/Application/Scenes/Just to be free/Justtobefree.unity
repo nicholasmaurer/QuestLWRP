@@ -172,7 +172,7 @@ PrefabInstance:
     - target: {fileID: 6209040287542452950, guid: 519d738b8d0ba4e8bab186a075d575e8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6209040287542452950, guid: 519d738b8d0ba4e8bab186a075d575e8,
         type: 3}
@@ -694,6 +694,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 150
       objectReference: {fileID: 0}
+    - target: {fileID: 2002907983558175101, guid: 0cae0ccd0a503d141bb48b71ed573d76,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bbbdce53e1203014ab8b4522b5625b97, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cae0ccd0a503d141bb48b71ed573d76, type: 3}
 --- !u!1 &985302037
@@ -849,7 +854,7 @@ PrefabInstance:
     - target: {fileID: 8610877174701581400, guid: 46553d7595f8f4f27b247d97209abfe5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8610877174701581400, guid: 46553d7595f8f4f27b247d97209abfe5,
         type: 3}
@@ -1223,7 +1228,7 @@ PrefabInstance:
     - target: {fileID: 4129396525422791288, guid: cf13fb89f9ae84cb79db7bac7460bc30,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4129396525422791288, guid: cf13fb89f9ae84cb79db7bac7460bc30,
         type: 3}
@@ -1361,7 +1366,7 @@ PrefabInstance:
     - target: {fileID: 6829099148290530537, guid: f458c9f47796a4bca943ae1a7adb1485,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6829099148290530537, guid: f458c9f47796a4bca943ae1a7adb1485,
         type: 3}
@@ -1430,7 +1435,7 @@ PrefabInstance:
     - target: {fileID: 7245446860392293217, guid: ea9d375d3e9e74cd7a1612978099ea84,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7245446860392293217, guid: ea9d375d3e9e74cd7a1612978099ea84,
         type: 3}
