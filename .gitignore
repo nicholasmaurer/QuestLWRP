@@ -1,3 +1,6 @@
+### virtually impossible ###
+/Assets/Application/Videos
+/Assets/Application/Videos.meta
 ### macOS ###
 # General
 .DS_Store
@@ -74,7 +77,7 @@ ExportedObj/
 # Unity3D generated file on crash reports
 sysinfo.txt
 
-### Crashlytics ### 
+### Crashlytics ###
 # generated file
 Assets/StreamingAssets/crashlytics-build.properties
 

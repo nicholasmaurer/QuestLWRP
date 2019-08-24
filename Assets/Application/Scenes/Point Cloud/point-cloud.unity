@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.000084706495, g: 0.000084706495, b: 0.000084706495,
+  m_IndirectSpecularColor: {r: 0.000084705105, g: 0.000084705105, b: 0.000084705105,
     a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
@@ -138,12 +138,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1271351811875399675, guid: bd3533ab75bbb47339745fc77265c804,
-        type: 3}
-      propertyPath: m_VideoClip
-      value: 
-      objectReference: {fileID: 32900000, guid: 968e5d1905df543fda431a0dbb50789c,
-        type: 3}
     - target: {fileID: 1271351811875399676, guid: bd3533ab75bbb47339745fc77265c804,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -152,7 +146,7 @@ PrefabInstance:
     - target: {fileID: 1271351811875399676, guid: bd3533ab75bbb47339745fc77265c804,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 1271351811875399676, guid: bd3533ab75bbb47339745fc77265c804,
         type: 3}
@@ -199,6 +193,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1271351811875399676, guid: bd3533ab75bbb47339745fc77265c804,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1271351811875399676, guid: bd3533ab75bbb47339745fc77265c804,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1271351811875399676, guid: bd3533ab75bbb47339745fc77265c804,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1271351811875399678, guid: bd3533ab75bbb47339745fc77265c804,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -224,6 +233,12 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1271351811875399675, guid: bd3533ab75bbb47339745fc77265c804,
+        type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: 38a8b65d78914c54bbfb44093fa46555,
+        type: 3}
     - target: {fileID: 1271351811875399677, guid: bd3533ab75bbb47339745fc77265c804,
         type: 3}
       propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[0].m_Value
