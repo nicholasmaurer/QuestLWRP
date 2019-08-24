@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2503232617343975816}
   - component: {fileID: 8672463967163740774}
   - component: {fileID: 4825840934378796244}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 6887456395818330054}
   - component: {fileID: 330436955088062738}
   - component: {fileID: 433660578854169774}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 1789015578962543318}
   - component: {fileID: 66782798651031888}
   - component: {fileID: 7685552504569903750}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -281,7 +281,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7685552504569903749}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -310,7 +310,7 @@ GameObject:
   - component: {fileID: 7526302101597790714}
   - component: {fileID: 1850955081934447522}
   - component: {fileID: 7438775219470743370}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
