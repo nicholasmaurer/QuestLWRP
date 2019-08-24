@@ -3,7 +3,22 @@ guid: 0cae0ccd0a503d141bb48b71ed573d76
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_5
+    second: {fileID: 2100000, guid: e5a3e300bdf5a475395ff00a44a12510, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Foam_B02_Black_40cm
+    second: {fileID: 2100000, guid: 40a6d1420caff4cd38c8d87527ba2815, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Iron_Dirty_20cm
+    second: {fileID: 2100000, guid: 1fe8661a1e5ae4ca88580b6a58b208ac, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -43,7 +58,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
