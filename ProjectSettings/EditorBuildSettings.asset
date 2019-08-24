@@ -5,13 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Application/Glass Alice/Glass1.unity
-    guid: ff4d3907d56da994ba1e452e8b7c47c1
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/Application/Scenes/Rehearsal on Crane/Rehearsal on Crane.unity
     guid: a91b28095f747d540b108e28e74e2d6d
   - enabled: 1

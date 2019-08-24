@@ -10,27 +10,20 @@ using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour
 {
     public Bounds sceneBounds;
-    [HideInInspector] public GameObject vrCamera;
-    [HideInInspector] public GameObject firstPersonCamera;
-    private bool isLoading = false;
+    private static bool isLoading = false;
     public static SceneController Instance;
-    private static SceneController instance;
-    
+
     private void Awake()
     {
-        instance = this;
-        if (Instance != null)
+        
+        if (Instance == null)
         {
-            Destroy(this.gameObject);
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
-        else
+        else if(Instance != this)
         {
-            vrCamera = FindObjectOfType<VRCamera>().gameObject;
-            firstPersonCamera = FindObjectOfType<FpsCharacterController>().gameObject;
-            Instance = instance;
-            DontDestroyOnLoad(this.gameObject);
-            DontDestroyOnLoad(vrCamera);
-            DontDestroyOnLoad(firstPersonCamera);
+            Destroy(gameObject);
         }
     }
     public IEnumerator LoadNextScene()
@@ -56,26 +49,10 @@ public class SceneController : MonoBehaviour
         AsyncOperation unLoadOperation = SceneManager.UnloadSceneAsync(scene);
         isLoading = false;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnDrawGizmos()
     {
-//        Gizmos.color = Color.green;
-//        Gizmos.DrawCube(startPoint.transform.position + new Vector3(0,0.5f,0), Vector3.one);
-//        Gizmos.color = Color.red;
-//        Gizmos.DrawCube(endPoint.transform.position + new Vector3(0,0.5f,0), Vector3.one);
         Gizmos.color = Color.white;
         Gizmos.DrawWireCube(sceneBounds.center, sceneBounds.extents);
     }
-
-    private void OnDestroy()
-    {
-        Destroy(vrCamera);
-        Destroy(firstPersonCamera);
-    }
+    
 }
