@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Application/Scenes/Glass Alice/Glass1.unity
+    path: Assets/Application/Glass Alice/Glass1.unity
     guid: ff4d3907d56da994ba1e452e8b7c47c1
   - enabled: 0
     path: 
