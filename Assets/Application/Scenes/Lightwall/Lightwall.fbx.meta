@@ -3,7 +3,12 @@ guid: 30af05b726f68ce4ea6bded66093b2f3
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Foam_B02_Black_40cm
+    second: {fileID: 2100000, guid: 4c977b87837f54e8ea43eace2547b8fd, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

@@ -3,7 +3,12 @@ guid: 705b41114089cdd4d8be7aea32a08cc4
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _LED_8000k
+    second: {fileID: 2100000, guid: 2c0aa5a06c6494da1816010ed410e59b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
