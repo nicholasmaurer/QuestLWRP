@@ -218,9 +218,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ee52ecc2406c045ac908c68fd1a214b2, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fd966605d992aa847bb2c9f6c5adaa8d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.982
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -229,33 +229,33 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 1
+  MaxDistance: 8
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.0125
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      time: 0.9925537
+      value: 0.35450745
+      inSlope: -1.0126582
+      outSlope: -1.0126582
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -264,7 +264,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -279,7 +279,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.23055555
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -915,7 +915,7 @@ PrefabInstance:
     - target: {fileID: 7245446860392293217, guid: ea9d375d3e9e74cd7a1612978099ea84,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7245446860392293217, guid: ea9d375d3e9e74cd7a1612978099ea84,
         type: 3}
@@ -925,27 +925,27 @@ PrefabInstance:
     - target: {fileID: 7245446860392293217, guid: ea9d375d3e9e74cd7a1612978099ea84,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7245446860392293217, guid: ea9d375d3e9e74cd7a1612978099ea84,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7245446860392293217, guid: ea9d375d3e9e74cd7a1612978099ea84,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.5388337
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7245446860392293217, guid: ea9d375d3e9e74cd7a1612978099ea84,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7245446860392293217, guid: ea9d375d3e9e74cd7a1612978099ea84,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.84241223
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7245446860392293217, guid: ea9d375d3e9e74cd7a1612978099ea84,
         type: 3}
@@ -960,7 +960,7 @@ PrefabInstance:
     - target: {fileID: 7245446860392293217, guid: ea9d375d3e9e74cd7a1612978099ea84,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 65.209
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7245446860392293217, guid: ea9d375d3e9e74cd7a1612978099ea84,
         type: 3}
